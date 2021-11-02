@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home"
+    >
+
+
+    <fragment
+        android:id="@+id/sub_pass"
+        android:name="com.example.asm_mob2041_phucngan.Fragment.ChangePassFragment"
+        android:label="Đổi mật khẩu"
+        tools:layout="@layout/fragment_change_pass" />
+    <fragment
+        android:id="@+id/sub_add"
+        android:name="com.example.asm_mob2041_phucngan.Fragment.AddUserFragment"
+        android:label="Thêm người dùng"
+        tools:layout="@layout/fragment_add_user" />
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.asm_mob2041_phucngan.Fragment.LogoutFragment"
+        android:label="Đăng Xuất"
+        tools:layout="@layout/fragment_logout" />
+    <fragment
+        android:id="@+id/nav_thanhvien"
+        android:name="com.example.asm_mob2041_phucngan.Fragment.ThanhVienFragment"
+        android:label="Quản Lý Thành Viên"
+        tools:layout="@layout/fragment_thanh_vien" />
+    <fragment
+        android:id="@+id/nav_sach"
+        android:name="com.example.asm_mob2041_phucngan.Fragment.SachFragment"
+        android:label="Quản Lý Sách"
+        tools:layout="@layout/fragment_sach" />
+    <fragment
+        android:id="@+id/nav_loaisach"
+        android:name="com.example.asm_mob2041_phucngan.Fragment.LoaiSachFragment"
+        android:label="Quản Lý Loại Sách"
+        tools:layout="@layout/fragment_loai_sach" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.asm_mob2041_phucngan.Fragment.PhieuMuonFragment"
+        android:label="Quản Lý Phiếu Mượn"
+        tools:layout="@layout/fragment_phieu_muon"/>
+    <fragment
+        android:id="@+id/sub_Top"
+        android:name="com.example.asm_mob2041_phucngan.Fragment.TopFragment"
+        android:label="Top 10 Sách"
+        tools:layout="@layout/fragment_top" />
+    <fragment
+        android:id="@+id/sub_DoanhThu"
+        android:name="com.example.asm_mob2041_phucngan.Fragment.DoanhThuFragment"
+        android:label="Doanh Thu"
+        tools:layout="@layout/fragment_doanh_thu" />
+</navigation>
